@@ -1,0 +1,76 @@
+body{
+    background-color: #000000;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+body :where(h3,h4,p){
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+    color: #ffffff;
+    
+}
+
+input{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: 1fr min(1440px,94%) 1fr;
+    grid-template-rows: 96px auto 72px;
+}
+
+.containers > *{
+    grid-column: 2;
+}
+
+.containers > .fluid{
+    grid-column: 1/-1;
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #FFFFFF;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+    width: 17px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #ffffff00;
+    border: 1px solid #000000;
+    padding: 5px;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #00000033;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: radial-gradient(#fff,#000);
+    background-blend-mode: difference;
+    border: 1px dashed #0508FF;
+    
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #62A34B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+  

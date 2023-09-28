@@ -1,0 +1,64 @@
+.hour{
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+}
+
+.hour button h2 {
+    color: #ffffff;
+}
+.hour button h3 {
+    color: #ffffff;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(180deg,#6d008d,#04006b);
+    padding: 8px;
+    border-radius: 40px;
+    align-items: center;
+}
+
+
+.mainContent:focus+.otherContent>div{
+    display: flex;
+
+}
+
+.otherContent>div{
+display: none;
+flex-wrap: wrap;
+min-width: 200px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+.otherContent{
+    height: 100%;
+    overflow-x:  hidden;
+    overflow-y: auto;
+
+    width: 100%;
+}
+.otherContent>div div input{
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.otherContent>div div{
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+.icon{
+    height: 50px;
+    font-size: 50px
+}

@@ -1,0 +1,19 @@
+.rightPanel{
+    flex: 3;
+    height:100%;
+    overflow: hidden auto;
+}
+
+.rightPanel>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid;
+    gap: 10px;
+}
+
+@media only screen and (max-width:750px){
+    .rightPanel{
+        display: none;
+    }
+}

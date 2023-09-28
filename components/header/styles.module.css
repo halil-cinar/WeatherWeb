@@ -1,0 +1,86 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: max(3vw,35px);
+    font-weight: 800;
+
+}
+
+.menuButton{
+    display: none;
+}
+
+.navMenu nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.navMenu nav  a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: 1s all;
+}
+ .navMenu nav  a:hover{
+    text-decoration: underline;
+ }
+
+ @media only screen and (max-width:768px){
+    .navMenu{
+        width: auto;
+        height: auto;
+    }
+    
+    .navMenu>div{
+        width: min(70%,320px);
+        display: none;
+        align-self: flex-start;
+        position: absolute;
+        right: 0;
+        z-index: 70;
+        height: 100%;
+        background: radial-gradient(#171b6590,#1511671c);
+        padding: 5px 15px;
+    }
+    .navMenu div nav{
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        height: min-content;
+    } 
+    .navMenu div>nav a{
+        flex: 0 0 100%;
+        text-align: center;
+        align-self: center;
+        background:linear-gradient(0deg,#00000082,#00000082);
+        padding: 8px;
+        font-size: 24px;
+        
+        white-space:break-spaces;
+        line-break: auto;
+
+        word-wrap: break-word;
+    }
+    .menuButton{
+        display: block;
+        justify-self: flex-end;
+    }
+    .menuButton:focus+div{
+        display: flex;
+    }
+} 
+@media only screen and (max-width:340px){
+    .navMenu div{
+        width: 100%;
+    }
+}

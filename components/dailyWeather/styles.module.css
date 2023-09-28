@@ -1,0 +1,13 @@
+.dailyWeather{
+    padding: 10px 2%;
+    overflow: auto;
+    width: 100%;
+}
+
+.dayList{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+
+}

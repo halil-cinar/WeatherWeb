@@ -1,0 +1,19 @@
+.homePage{
+    display: flex;
+    overflow: hidden;
+    height: 81vh;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.background{
+    height: auto !important;
+    z-index: -3;
+}
+
+@media only screen and (max-width:750px){
+    .homePage{
+        gap: 0px;
+    }
+}
