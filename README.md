@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WeatherWeb Project
 
-## Getting Started
 
-First, run the development server:
+**WeatherWeb is a web application that allows users to view weather information, see background images related to the selected city and its current weather, search for cities, and view weekly and hourly weather forecasts.** 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![WeatherWeb Screenshot](https://github.com/halil-cinar/WeatherWeb/blob/main/images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202023-09-28%20124031.png?raw=true)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Weather Display**: Users can view current weather information for their selected cities.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Background Image**: A background image that matches the current weather is automatically displayed for each city.
 
-## Learn More
+- **City Search**: Users can easily find their desired city using the search bar.
 
-To learn more about Next.js, take a look at the following resources:
+- **Weekly and Daily Weather**: Users can plan ahead by viewing weekly and daily weather forecasts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Language**: JavaScript (JS)
+- **Framework**: Next.js
 
-## Deploy on Vercel
+## APIs used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses the following APIs:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [OpenWeatherMap API](https://openweathermap.org/): Used to pull weather data.
+- [Pexels API](https://www.pexels.com/api/): Used to pull background images.
+
+## Installation
+
+1. Clone the [GitHub repository](https://github.com/halil-cinar/WeatherWeb) and download the source code of the application.
+2. Navigate to the project folder and install dependencies using a package manager such as npm or yarn.
+3. Run the application using a development server.
+4. Start the json files in the api folder with json-server to display the data in the application
+5. Open a web browser and access the application at the specified local URL.
+
+## Thank you
+We would like to thank the API providers used in this project:
+
+- [WeatherAPI](https://www.weatherapi.com/)
+- [Pexels API](https://www.pexels.com/api/)
