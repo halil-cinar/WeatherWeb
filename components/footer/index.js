@@ -11,7 +11,7 @@ export default function Footer(props) {
             <footer className={styles.footer}>
                 <div>
                     {"Made with by "}
-                    <Link href="https://www.google.com" >Halil Çınar</Link>
+                    <Link href="https://github.com/halil-cinar" >Halil Çınar</Link>
                 </div>
             </footer>
         </div>
